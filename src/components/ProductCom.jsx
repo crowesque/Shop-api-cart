@@ -23,7 +23,7 @@ const ProductCom = () => {
 				return(
 				<div
 					key={product.id}
-					className='justify-center h-[300px] hover:scale-110 '
+					className='justify-center h-[300px] hover:scale-110 duration-300 '
 				>
 					<div
 						key={product.id}
@@ -36,7 +36,7 @@ const ProductCom = () => {
 						/>
 						<button
 							onClick={() => dispatch({ type: 'ADD', payload:product })}
-							className='text-black absolute rounded-full border border-black ml-[200px] mt-[150px] p-1  hover:text-white hover:bg-black'
+							className='text-black absolute rounded-full border border-black ml-[200px] mt-[150px] p-1  hover:text-white hover:bg-black duration-300 '
 						>
 							<ShoppingCart size={22} />
 						</button>
@@ -46,7 +46,7 @@ const ProductCom = () => {
 							<p className='font-semibold'>{`Price ${product.price}`}</p>
 						</div>
 						<div className='flex'>
-							<h2 className='whitespace-wrap max-h-6 overflow-hidden text-ellipsis hover:text-red-700 hover:max-h-[150px]'>
+							<h2 className='whitespace-wrap max-h-6 overflow-hidden text-ellipsis hover:text-red-700 hover:max-h-[150px] duration-300'>
 								{product.title}
 							</h2>
 						</div>
